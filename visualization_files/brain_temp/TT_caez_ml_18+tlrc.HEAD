@@ -1,0 +1,1289 @@
+
+type = string-attribute
+name = VALUE_LABEL_DTABLE
+count = 3740
+'<VALUE_LABEL_DTABLE
+ni_type="2*String"
+ni_dimen="116"
+pbar_name="ROI_i128">
+"1" "Left_Precentral_Gyrus"
+"2" "Right_Precentral_Gyrus"
+"3" "Left_Superior_Frontal_Gyrus"
+"4" "Right_Superior_Frontal_Gyrus"
+"5" "Left_Superior_Orbital_Gyrus"
+"6" "Right_Superior_Orbital_Gyrus"
+"7" "Left_Middle_Frontal_Gyrus"
+"8" "Right_Middle_Frontal_Gyrus"
+"9" "Left_Middle_Orbital_Gyrus"
+"10" "Right_Middle_Orbital_Gyrus"
+"11" "Left_Inferior_Frontal_Gyrus_(p._Opercularis)"
+"12" "Right_Inferior_Frontal_Gyrus_(p._Opercularis)"
+"13" "Left_Inferior_Frontal_Gyrus_(p._Triangularis)"
+"14" "Right_Inferior_Frontal_Gyrus_(p._Triangularis)"
+"15" "Left_Inferior_Frontal_Gyrus_(p._Orbitalis)"
+"16" "Right_Inferior_Frontal_Gyrus_(p._Orbitalis)"
+"17" "Left_Rolandic_Operculum"
+"18" "Right_Rolandic_Operculum"
+"19" "Left_SMA"
+"20" "Right_SMA"
+"21" "Left_Olfactory_cortex"
+"22" "Right_Olfactory_cortex"
+"23" "Left_Superior_Medial_Gyrus"
+"24" "Right_Superior_Medial_Gyrus"
+"25" "Left_Mid_Orbital_Gyrus"
+"26" "Right_Mid_Orbital_Gyrus"
+"27" "Left_Rectal_Gyrus"
+"28" "Right_Rectal_Gyrus"
+"29" "Left_Insula_Lobe"
+"30" "Right_Insula_Lobe"
+"31" "Left_Anterior_Cingulate_Cortex"
+"32" "Right_Anterior_Cingulate_Cortex"
+"33" "Left_Middle_Cingulate_Cortex"
+"34" "Right_Middle_Cingulate_Cortex"
+"35" "Left_Posterior_Cingulate_Cortex"
+"36" "Right_Posterior_Cingulate_Cortex"
+"37" "Left_Hippocampus"
+"38" "Right_Hippocampus"
+"39" "Left_ParaHippocampal_Gyrus"
+"40" "Right_ParaHippocampal_Gyrus"
+"41" "Left_Amygdala"
+"42" "Right_Amygdala"
+"43" "Left_Calcarine_Gyrus"
+"44" "Right_Calcarine_Gyrus"
+"45" "Left_Cuneus"
+"46" "Right_Cuneus"
+"47" "Left_Lingual_Gyrus"
+"48" "Right_Lingual_Gyrus"
+"49" "Left_Superior_Occipital_Gyrus"
+"50" "Right_Superior_Occipital_Gyrus"
+"51" "Left_Middle_Occipital_Gyrus"
+"52" "Right_Middle_Occipital_Gyrus"
+"53" "Left_Inferior_Occipital_Gyrus"
+"54" "Right_Inferior_Occipital_Gyrus"
+"55" "Left_Fusiform_Gyrus"
+"56" "Right_Fusiform_Gyrus"
+"57" "Left_Postcentral_Gyrus"
+"58" "Right_Postcentral_Gyrus"
+"59" "Left_Superior_Parietal_Lobule"
+"60" "Right_Superior_Parietal_Lobule"
+"61" "Left_Inferior_Parietal_Lobule"
+"62" "Right_Inferior_Parietal_Lobule"
+"63" "Left_SupraMarginal_Gyrus"
+"64" "Right_SupraMarginal_Gyrus"
+"65" "Left_Angular_Gyrus"
+"66" "Right_Angular_Gyrus"
+"67" "Left_Precuneus"
+"68" "Right_Precuneus"
+"69" "Left_Paracentral_Lobule"
+"70" "Right_Paracentral_Lobule"
+"71" "Left_Caudate_Nucleus"
+"72" "Right_Caudate_Nucleus"
+"73" "Left_Putamen"
+"74" "Right_Putamen"
+"75" "Left_Pallidum"
+"76" "Right_Pallidum"
+"77" "Left_Thalamus"
+"78" "Right_Thalamus"
+"79" "Left_Heschls_Gyrus"
+"80" "Right_Heschls_Gyrus"
+"81" "Left_Superior_Temporal_Gyrus"
+"82" "Right_Superior_Temporal_Gyrus"
+"83" "Left_Temporal_Pole"
+"84" "Right_Temporal_Pole"
+"85" "Left_Middle_Temporal_Gyrus"
+"86" "Right_Middle_Temporal_Gyrus"
+"87" "Left_Medial_Temporal_Pole"
+"88" "Right_Medial_Temporal_Pole"
+"89" "Left_Inferior_Temporal_Gyrus"
+"90" "Right_Inferior_Temporal_Gyrus"
+"91" "Left_Cerebellum_(Crus_1)"
+"92" "Right_Cerebellum_(Crus_1)"
+"93" "Left_Cerebellum_(Crus_2)"
+"94" "Right_Cerebellum_(Crus_2)"
+"95" "Left_Cerebellum_(III)"
+"96" "Right_Cerebellum_(III)"
+"97" "Left_Cerebellum_(IV-V)"
+"98" "Right_Cerebellum_(IV-V)"
+"99" "Left_Cerebellum_(VI)"
+"100" "Right_Cerebellum_(VI)"
+"101" "Left_Cerebellum_(VII)"
+"102" "Right_Cerebellum_(VII)"
+"103" "Left_Cerebellum_(VIII)"
+"104" "Right_Cerebellum_(VIII)"
+"105" "Left_Cerebellum_(IX)"
+"106" "Right_Cerebellum_(IX)"
+"107" "Left_Cerebellum_(X)"
+"108" "Right_Cerebellum_(X)"
+"109" "Cerebellar_Vermis_(1/2)"
+"110" "Cerebellar_Vermis_(3)"
+"111" "Cerebellar_Vermis_(4/5)"
+"112" "Cerebellar_Vermis_(6)"
+"113" "Cerebellar_Vermis_(7)"
+"114" "Cerebellar_Vermis_(8)"
+"115" "Cerebellar_Vermis_(9)"
+"116" "Cerebellar_Vermis_(10)"
+</VALUE_LABEL_DTABLE>
+~
+
+type = string-attribute
+name = ATLAS_LABEL_TABLE
+count = 14569
+'<atlas_point_list
+ ni_form="ni_group">
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Precentral_Gyrus"
+ VAL="1"
+ OKEY="1"
+ GYoAR="0"
+ COG="36 11 47"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Precentral_Gyrus"
+ VAL="2"
+ OKEY="2"
+ GYoAR="0"
+ COG="-39 13 48"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Superior_Frontal_Gyrus"
+ VAL="3"
+ OKEY="3"
+ GYoAR="0"
+ COG="17 -29 41"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Superior_Frontal_Gyrus"
+ VAL="4"
+ OKEY="4"
+ GYoAR="0"
+ COG="-20 -26 42"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Superior_Orbital_Gyrus"
+ VAL="5"
+ OKEY="5"
+ GYoAR="0"
+ COG="15 -44 -6"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Superior_Orbital_Gyrus"
+ VAL="6"
+ OKEY="6"
+ GYoAR="0"
+ COG="-17 -44 -6"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Middle_Frontal_Gyrus"
+ VAL="7"
+ OKEY="7"
+ GYoAR="0"
+ COG="31 -26 36"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Middle_Frontal_Gyrus"
+ VAL="8"
+ OKEY="8"
+ GYoAR="0"
+ COG="-35 -27 34"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Middle_Orbital_Gyrus"
+ VAL="9"
+ OKEY="9"
+ GYoAR="0"
+ COG="29 -47 -2"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Middle_Orbital_Gyrus"
+ VAL="10"
+ OKEY="10"
+ GYoAR="0"
+ COG="-31 -49 -3"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Inferior_Frontal_Gyrus_(p._Opercularis)"
+ VAL="11"
+ OKEY="11"
+ GYoAR="0"
+ COG="45 -7 21"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Inferior_Frontal_Gyrus_(p._Opercularis)"
+ VAL="12"
+ OKEY="12"
+ GYoAR="0"
+ COG="-47 -9 23"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Inferior_Frontal_Gyrus_(p._Triangularis)"
+ VAL="13"
+ OKEY="13"
+ GYoAR="0"
+ COG="43 -25 17"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Inferior_Frontal_Gyrus_(p._Triangularis)"
+ VAL="14"
+ OKEY="14"
+ GYoAR="0"
+ COG="-48 -25 17"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Inferior_Frontal_Gyrus_(p._Orbitalis)"
+ VAL="15"
+ OKEY="15"
+ GYoAR="0"
+ COG="34 -27 -6"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Inferior_Frontal_Gyrus_(p._Orbitalis)"
+ VAL="16"
+ OKEY="16"
+ GYoAR="0"
+ COG="-39 -29 -5"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Rolandic_Operculum"
+ VAL="17"
+ OKEY="17"
+ GYoAR="0"
+ COG="44 12 15"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Rolandic_Operculum"
+ VAL="18"
+ OKEY="18"
+ GYoAR="0"
+ COG="-50 9 15"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_SMA"
+ VAL="19"
+ OKEY="19"
+ GYoAR="0"
+ COG="5 2 57"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_SMA"
+ VAL="20"
+ OKEY="20"
+ GYoAR="0"
+ COG="-8 6 57"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Olfactory_cortex"
+ VAL="21"
+ OKEY="21"
+ GYoAR="0"
+ COG="7 -12 -7"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Olfactory_cortex"
+ VAL="22"
+ OKEY="22"
+ GYoAR="0"
+ COG="-9 -14 -5"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Superior_Medial_Gyrus"
+ VAL="23"
+ OKEY="23"
+ GYoAR="0"
+ COG="4 -43 33"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Superior_Medial_Gyrus"
+ VAL="24"
+ OKEY="24"
+ GYoAR="0"
+ COG="-9 -44 32"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Mid_Orbital_Gyrus"
+ VAL="25"
+ OKEY="25"
+ GYoAR="0"
+ COG="5 -50 0"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Mid_Orbital_Gyrus"
+ VAL="26"
+ OKEY="26"
+ GYoAR="0"
+ COG="-8 -47 0"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Rectal_Gyrus"
+ VAL="27"
+ OKEY="27"
+ GYoAR="0"
+ COG="5 -34 -11"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Rectal_Gyrus"
+ VAL="28"
+ OKEY="28"
+ GYoAR="0"
+ COG="-8 -33 -11"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Insula_Lobe"
+ VAL="29"
+ OKEY="29"
+ GYoAR="0"
+ COG="32 -4 6"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Insula_Lobe"
+ VAL="30"
+ OKEY="30"
+ GYoAR="0"
+ COG="-37 -4 5"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Anterior_Cingulate_Cortex"
+ VAL="31"
+ OKEY="31"
+ GYoAR="0"
+ COG="4 -30 17"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Anterior_Cingulate_Cortex"
+ VAL="32"
+ OKEY="32"
+ GYoAR="0"
+ COG="-8 -32 19"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Middle_Cingulate_Cortex"
+ VAL="33"
+ OKEY="33"
+ GYoAR="0"
+ COG="5 19 38"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Middle_Cingulate_Cortex"
+ VAL="34"
+ OKEY="34"
+ GYoAR="0"
+ COG="-8 13 37"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Posterior_Cingulate_Cortex"
+ VAL="35"
+ OKEY="35"
+ GYoAR="0"
+ COG="4 43 22"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Posterior_Cingulate_Cortex"
+ VAL="36"
+ OKEY="36"
+ GYoAR="0"
+ COG="-7 42 20"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Hippocampus"
+ VAL="37"
+ OKEY="37"
+ GYoAR="0"
+ COG="23 21 -7"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Hippocampus"
+ VAL="38"
+ OKEY="38"
+ GYoAR="0"
+ COG="-28 20 -7"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_ParaHippocampal_Gyrus"
+ VAL="39"
+ OKEY="39"
+ GYoAR="0"
+ COG="20 16 -16"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_ParaHippocampal_Gyrus"
+ VAL="40"
+ OKEY="40"
+ GYoAR="0"
+ COG="-24 15 -16"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Amygdala"
+ VAL="41"
+ OKEY="41"
+ GYoAR="0"
+ COG="22 3 -12"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Amygdala"
+ VAL="42"
+ OKEY="42"
+ GYoAR="0"
+ COG="-26 2 -12"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Calcarine_Gyrus"
+ VAL="43"
+ OKEY="43"
+ GYoAR="0"
+ COG="6 76 4"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Calcarine_Gyrus"
+ VAL="44"
+ OKEY="44"
+ GYoAR="0"
+ COG="-15 71 7"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Cuneus"
+ VAL="45"
+ OKEY="45"
+ GYoAR="0"
+ COG="5 78 22"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Cuneus"
+ VAL="46"
+ OKEY="46"
+ GYoAR="0"
+ COG="-13 78 23"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Lingual_Gyrus"
+ VAL="47"
+ OKEY="47"
+ GYoAR="0"
+ COG="14 64 -5"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Lingual_Gyrus"
+ VAL="48"
+ OKEY="48"
+ GYoAR="0"
+ COG="-16 64 -4"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Superior_Occipital_Gyrus"
+ VAL="49"
+ OKEY="49"
+ GYoAR="0"
+ COG="15 82 22"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Superior_Occipital_Gyrus"
+ VAL="50"
+ OKEY="50"
+ GYoAR="0"
+ COG="-23 79 25"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Middle_Occipital_Gyrus"
+ VAL="51"
+ OKEY="51"
+ GYoAR="0"
+ COG="30 78 12"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Middle_Occipital_Gyrus"
+ VAL="52"
+ OKEY="52"
+ GYoAR="0"
+ COG="-35 77 15"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Inferior_Occipital_Gyrus"
+ VAL="53"
+ OKEY="53"
+ GYoAR="0"
+ COG="34 74 -9"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Inferior_Occipital_Gyrus"
+ VAL="54"
+ OKEY="54"
+ GYoAR="0"
+ COG="-36 78 -9"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Fusiform_Gyrus"
+ VAL="55"
+ OKEY="55"
+ GYoAR="0"
+ COG="29 39 -17"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Fusiform_Gyrus"
+ VAL="56"
+ OKEY="56"
+ GYoAR="0"
+ COG="-32 37 -17"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Postcentral_Gyrus"
+ VAL="57"
+ OKEY="57"
+ GYoAR="0"
+ COG="39 26 45"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Postcentral_Gyrus"
+ VAL="58"
+ OKEY="58"
+ GYoAR="0"
+ COG="-38 29 48"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Superior_Parietal_Lobule"
+ VAL="59"
+ OKEY="59"
+ GYoAR="0"
+ COG="22 61 51"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Superior_Parietal_Lobule"
+ VAL="60"
+ OKEY="60"
+ GYoAR="0"
+ COG="-25 61 53"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Inferior_Parietal_Lobule"
+ VAL="61"
+ OKEY="61"
+ GYoAR="0"
+ COG="40 47 41"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Inferior_Parietal_Lobule"
+ VAL="62"
+ OKEY="62"
+ GYoAR="0"
+ COG="-44 48 43"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_SupraMarginal_Gyrus"
+ VAL="63"
+ OKEY="63"
+ GYoAR="0"
+ COG="52 35 28"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_SupraMarginal_Gyrus"
+ VAL="64"
+ OKEY="64"
+ GYoAR="0"
+ COG="-54 33 31"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Angular_Gyrus"
+ VAL="65"
+ OKEY="65"
+ GYoAR="0"
+ COG="41 60 30"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Angular_Gyrus"
+ VAL="66"
+ OKEY="66"
+ GYoAR="0"
+ COG="-43 60 33"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Precuneus"
+ VAL="67"
+ OKEY="67"
+ GYoAR="0"
+ COG="7 57 42"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Precuneus"
+ VAL="68"
+ OKEY="68"
+ GYoAR="0"
+ COG="-9 56 38"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Paracentral_Lobule"
+ VAL="69"
+ OKEY="69"
+ GYoAR="0"
+ COG="7 29 63"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Paracentral_Lobule"
+ VAL="70"
+ OKEY="70"
+ GYoAR="0"
+ COG="-7 35 60"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Caudate_Nucleus"
+ VAL="71"
+ OKEY="71"
+ GYoAR="0"
+ COG="11 -7 12"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Caudate_Nucleus"
+ VAL="72"
+ OKEY="72"
+ GYoAR="0"
+ COG="-14 -8 12"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Putamen"
+ VAL="73"
+ OKEY="73"
+ GYoAR="0"
+ COG="22 -1 5"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Putamen"
+ VAL="74"
+ OKEY="74"
+ GYoAR="0"
+ COG="-26 -2 5"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Pallidum"
+ VAL="75"
+ OKEY="75"
+ GYoAR="0"
+ COG="16 3 3"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Pallidum"
+ VAL="76"
+ OKEY="76"
+ GYoAR="0"
+ COG="-20 3 3"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Thalamus"
+ VAL="77"
+ OKEY="77"
+ GYoAR="0"
+ COG="10 19 9"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Thalamus"
+ VAL="78"
+ OKEY="78"
+ GYoAR="0"
+ COG="-13 19 9"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Heschls_Gyrus"
+ VAL="79"
+ OKEY="79"
+ GYoAR="0"
+ COG="39 20 11"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Heschls_Gyrus"
+ VAL="80"
+ OKEY="80"
+ GYoAR="0"
+ COG="-43 18 11"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Superior_Temporal_Gyrus"
+ VAL="81"
+ OKEY="81"
+ GYoAR="0"
+ COG="49 22 8"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Superior_Temporal_Gyrus"
+ VAL="82"
+ OKEY="82"
+ GYoAR="0"
+ COG="-55 23 8"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Temporal_Pole"
+ VAL="83"
+ OKEY="83"
+ GYoAR="0"
+ COG="37 -12 -14"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Temporal_Pole"
+ VAL="84"
+ OKEY="84"
+ GYoAR="0"
+ COG="-45 -12 -11"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Middle_Temporal_Gyrus"
+ VAL="85"
+ OKEY="85"
+ GYoAR="0"
+ COG="52 34 -1"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Middle_Temporal_Gyrus"
+ VAL="86"
+ OKEY="86"
+ GYoAR="0"
+ COG="-54 37 0"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Medial_Temporal_Pole"
+ VAL="87"
+ OKEY="87"
+ GYoAR="0"
+ COG="34 -13 -26"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Medial_Temporal_Pole"
+ VAL="88"
+ OKEY="88"
+ GYoAR="0"
+ COG="-42 -12 -25"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Inferior_Temporal_Gyrus"
+ VAL="89"
+ OKEY="89"
+ GYoAR="0"
+ COG="46 27 -19"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Inferior_Temporal_Gyrus"
+ VAL="90"
+ OKEY="90"
+ GYoAR="0"
+ COG="-51 30 -18"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Cerebellum_(Crus_1)"
+ VAL="91"
+ OKEY="91"
+ GYoAR="0"
+ COG="33 62 -27"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Cerebellum_(Crus_1)"
+ VAL="92"
+ OKEY="92"
+ GYoAR="0"
+ COG="-36 62 -27"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Cerebellum_(Crus_2)"
+ VAL="93"
+ OKEY="93"
+ GYoAR="0"
+ COG="26 68 -35"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Cerebellum_(Crus_2)"
+ VAL="94"
+ OKEY="94"
+ GYoAR="0"
+ COG="-31 63 -37"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Cerebellum_(III)"
+ VAL="95"
+ OKEY="95"
+ GYoAR="0"
+ COG="7 34 -16"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Cerebellum_(III)"
+ VAL="96"
+ OKEY="96"
+ GYoAR="0"
+ COG="-13 32 -17"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Cerebellum_(IV-V)"
+ VAL="97"
+ OKEY="97"
+ GYoAR="0"
+ COG="13 41 -15"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Cerebellum_(IV-V)"
+ VAL="98"
+ OKEY="98"
+ GYoAR="0"
+ COG="-17 40 -16"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Cerebellum_(VI)"
+ VAL="99"
+ OKEY="99"
+ GYoAR="0"
+ COG="21 55 -20"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Cerebellum_(VI)"
+ VAL="100"
+ OKEY="100"
+ GYoAR="0"
+ COG="-24 54 -21"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Cerebellum_(VII)"
+ VAL="101"
+ OKEY="101"
+ GYoAR="0"
+ COG="30 55 -39"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Cerebellum_(VII)"
+ VAL="102"
+ OKEY="102"
+ GYoAR="0"
+ COG="-33 58 -42"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Cerebellum_(VIII)"
+ VAL="103"
+ OKEY="103"
+ GYoAR="0"
+ COG="23 49 -43"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Cerebellum_(VIII)"
+ VAL="104"
+ OKEY="104"
+ GYoAR="0"
+ COG="-25 51 -44"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Cerebellum_(IX)"
+ VAL="105"
+ OKEY="105"
+ GYoAR="0"
+ COG="9 44 -41"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Cerebellum_(IX)"
+ VAL="106"
+ OKEY="106"
+ GYoAR="0"
+ COG="-10 44 -41"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Left_Cerebellum_(X)"
+ VAL="107"
+ OKEY="107"
+ GYoAR="0"
+ COG="20 30 -36"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Right_Cerebellum_(X)"
+ VAL="108"
+ OKEY="108"
+ GYoAR="0"
+ COG="-26 30 -36"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Cerebellar_Vermis_(1/2)"
+ VAL="109"
+ OKEY="109"
+ GYoAR="0"
+ COG="-2 36 -17"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Cerebellar_Vermis_(3)"
+ VAL="110"
+ OKEY="110"
+ GYoAR="0"
+ COG="-2 38 -9"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Cerebellar_Vermis_(4/5)"
+ VAL="111"
+ OKEY="111"
+ GYoAR="0"
+ COG="-2 50 -5"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Cerebellar_Vermis_(6)"
+ VAL="112"
+ OKEY="112"
+ GYoAR="0"
+ COG="-2 63 -14"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Cerebellar_Vermis_(7)"
+ VAL="113"
+ OKEY="113"
+ GYoAR="0"
+ COG="-2 67 -24"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Cerebellar_Vermis_(8)"
+ VAL="114"
+ OKEY="114"
+ GYoAR="0"
+ COG="-2 59 -31"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Cerebellar_Vermis_(9)"
+ VAL="115"
+ OKEY="115"
+ GYoAR="0"
+ COG="-2 50 -31"
+/>
+
+<ATLAS_POINT
+ data_type="atlas_point"
+ STRUCT="Cerebellar_Vermis_(10)"
+ VAL="116"
+ OKEY="116"
+ GYoAR="0"
+ COG="-1 42 -28"
+/>
+
+</atlas_point_list>~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'none~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_ANAT~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'AFN_77QWsowVFnQeK4CrPXl0Ww~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Wed Sep  7 17:57:39 2022~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 11 0 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'none~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'none~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 3 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+            -80            -80            -65
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              1              1              1
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              1              0              0            -80              0
+              1              0            -80              0              0
+              1            -65
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+              1              0              0            -80              0
+              1              0            -80              0              0
+              1            -65
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0            116
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 161 191 151 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 0
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 3
+'#0~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 7
+'TT_N27~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~

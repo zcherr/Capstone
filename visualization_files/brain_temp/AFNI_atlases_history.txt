@@ -1,0 +1,26 @@
+This is the collection of atlases distributed by default with the AFNI binaries.
+There are other atlas packages available from the AFNI website which are not included by default.
+
+    https://afni.nimh.nih.gov/pub/dist/atlases
+
+The distributed set is under (directory or direct tgz):
+
+    https://afni.nimh.nih.gov/pub/dist/atlases/afni_atlases_dist
+    https://afni.nimh.nih.gov/pub/dist/atlases/afni_atlases_dist.tgz
+
+
+version history (starting LATE, in 2020):
+
+1.00  ... many updates by RWC and DRG ...
+1.01  2020.06.30 add TT_N27_SSW.nii.gz [PT]
+1.02  2021.03.06 add MNI_Glasser_HCP_v1.0.nii.gz [DRG]
+1.03  2022.01.21 rename 'current' to 'afni_atlases_dist' [RCR]
+1.04  2022.04.07 adding in center locations to caez_ml macrolabel atlases [DRG]
+1.05  2022.04.24 add afni_refacer_shell_sym_1.0.nii.gz [PT]
+		 add afni_refacer_shell_sym_2.0.nii.gz
+1.06  2022.09.07 added 116 Cerebellar Vermis (10) to macrolabel atlases [DRG]
+2.00  2024.03.12 many atlases removed or added [DRG]
+	         removed: TTatlas, CA_MPM_18, MNI_ANAT*, etc.
+		 added:   Brodmann_Pijn*, Julich*, Freesurfer atlases
+		 see: https://discuss.afni.nimh.nih.gov/t/afni-atlas-update/
+2.01  2024.03.19 added APQC_atlas_MNI* atlases for APQC [PT]

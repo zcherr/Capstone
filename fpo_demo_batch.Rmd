@@ -1,0 +1,192 @@
+---
+title: "fpo_demo_batch_zihan"
+author: "Zihan Li"
+date: "2024-08-01"
+output: html_document
+---
+
+Try to read in data of all participants to process in batches. This is the combination of task 1&2 of 2024-07-19 demo.
+
+```{r}
+# loading packages
+library(glmnet) #Make sure this package is installed.
+library(ggplot2)
+library(xfun, include.only = "cache_rds")
+library(tidyverse)
+
+source('fpo_functions_zhli.R')
+```
+
+# Read in data
+
+```{r}
+# Set the path to the directory containing the CSV files
+path <- "./fpo_data_all"
+
+# List the main brain data CSV files
+file_names <- list.files(path = path, pattern = "jlp[0-9]+\\.csv", full.names = TRUE)
+print(file_names)
+
+stims <- read.csv(file.path(path,"fpo_tr5_allParticipants_stimuli.csv"), header = T)
+coord <- read.csv(file.path(path,"fpo_tr5_allParticipants_coordinates.csv"), header = F) |> 
+  mutate(x = V1,
+         y = V2,
+         z = V3)
+```
+
+# Batch Processing for all participants
+
+## Loop through the files only using the iterative selection function
+
+```{r}
+# store the results of all subjects
+results_all <- list()
+
+# Loop over each brain data file, fit a model for each subject, and store the result
+for (i in seq_along(file_names)) {
+  # '\\1' referring to the first capture group
+  # basename() returns the filename
+  # Returns the results stored with the subject name
+  subject_id <- as.numeric(gsub("jlp([0-9]+)\\.csv", "\\1", basename(file_names[i])))
+  # read in corresponding voxel file
+  s_brain <- as.matrix(read.csv(file_names[i], row.names = NULL, header = FALSE))
+  s_stims <- stims |> filter(subject == subject_id)
+  # Voxel activation patterns as the predictor matrix
+  x <- s_brain
+  #Category labels coded as a three-level factor:
+  y <- factor(s_stims$category, levels = c("face", "place", "object"))
+  
+  # Fit the model for the subject
+  cat("Processing subject:", subject_id, "\n")
+  
+  tictoc::tic()
+  result_iter <- cache_rds(
+    expr = {
+      iterative_selection(x = x, y = y, threshold = 1/3, num_hold_out = 9, runs=10, max_iter = 10, seed = 42)
+      },
+    dir = "cache/",
+    file = paste0("iterative_selection_s", subject_id),
+    # CHANGE the `rerun` as TRUE when modify any parameters in the function above
+    rerun = F
+    )
+  tictoc::toc()
+  
+  results_all[[paste0("10_subject_", subject_id)]] <- result_iter
+}
+
+```
+
+## Show results
+
+```{r}
+# Print the results to see the outcome for each subject
+for (subject_id in names(results_all)) {
+  cat("Results for", subject_id, ":\n")
+  # hold-out accuracies
+  cat("Median Accuracies: ", results_all[[subject_id]][[1]], "\n")  
+  # selected features
+  print(head(results_all[[subject_id]][[2]]))  
+  # num of selected features
+  cat("Number of selected voxels: ", ncol(results_all[[subject_id]]$selected_x),  "\n")
+}
+```
+
+### Try to train the model with selected voxels for all subjects
+
+```{r}
+results_all_w_coord <- list()
+cv_accuracies <- data.frame(Subject = character(), Lambda = numeric(), Accuracy = numeric(), stringsAsFactors = FALSE)
+
+s_results <- cache_rds(
+    expr = {
+      for (i in seq_along(file_names)) {
+        cat("Processing for", names(results_all)[i], "...\n")
+        subject_id <- names(results_all)[i]
+        
+        # Select the stimulus according to the subject order (starts from 3, so it's `i+2`)
+        brain <- read.csv(file_names[i], row.names = NULL, header = FALSE)
+        stim <- stims |> filter(subject == i + 2)
+        x <- results_all[[i]]$selected_x |> as.matrix()
+        y <- factor(stim$category, levels = c("face", "place", "object"))
+      
+        # Reproducibility control
+        set.seed(42)
+        runs <- 10
+        hold_out_acc <- matrix(NA, 2, runs) # Matrix to hold results from 10 runs of the function
+        for (j in 1:runs) {
+          hold_out_acc[, j] <- cv_accuracy(x = x, y = y, num_hold_out = 9) 
+        }
+        
+        # Record the cross-validation accuracy and lambda
+        avg_accuracy <- mean(hold_out_acc[2, ])
+        selected_lambda <- median(hold_out_acc[1, ])
+        cv_accuracies <- rbind(cv_accuracies, 
+                               data.frame(subject = as.factor(sub(".*_(\\d+)$", "\\1", subject_id)), 
+                                          lambda = selected_lambda, 
+                                          accuracy = avg_accuracy))
+        
+        # Train the final model with L2 norm
+        mfinal_cv <- glmnet(x = x, y = y, family = "multinomial", alpha = 0, lambda = selected_lambda)
+        tmp <- coef(mfinal_cv)
+        mcoefs <- cbind(as.matrix(tmp[[1]]), as.matrix(tmp[[2]]), as.matrix(tmp[[3]]))
+        mcoefs <- mcoefs[-1, ]
+        colnames(mcoefs) <- c("face", "place", "object")
+        
+        # Coordinates of the effective voxels
+        coord_subject <- coord |> 
+          filter(V4 == i + 2) |> 
+          select(x, y, z)
+        rownames(coord_subject) <- brain |> 
+          colnames()
+        
+        results_all_w_coord[[subject_id]] <- coord_subject |> 
+          subset(rownames(coord_subject) %in% colnames(results_all[[i]]$selected_x)) |> 
+          cbind(mcoefs)
+      }
+    },
+    dir = "cache/",
+    file = paste0("m_paras_coords"), 
+    # Remember to RESET when modifying parameters
+    rerun = F
+)
+
+# Print the cross-validation accuracies
+print(cv_accuracies)
+```
+
+```{r}
+# show the results. could be exported as `.csv`
+for (subject_id in names(results_all_w_coord)) {
+  print(paste0('Voxel reaction and coordinates of ', subject_id))
+  print(results_all_w_coord[[subject_id]])
+}
+```
+
+
+## save as csv files
+
+```{r}
+# Create a directory to store the CSV files if it doesn't exist
+output_dir <- "output_csv"
+if (!dir.exists(output_dir)) {
+  dir.create(output_dir)
+}
+
+# Iterate through each subject in results_all_w_coord
+for (subject_id in names(results_all_w_coord)) {
+  # Prepare data for CSV
+  csv_data <- results_all_w_coord[[subject_id]]
+  # Define the output file name
+  output_file <- file.path(output_dir, paste0(subject_id, "_voxel_fpo_coefs.csv"))
+  # Write data to CSV
+  write.csv(csv_data, output_file, row.names = T)
+  cat("CSV file generated for", subject_id, "at", output_file, "\n")
+}
+
+```
+
+## 2024-08 Summary
+
+In the loop above, I process the data of all participants with the iterative feature selection procedure. The result contains the log of accuracy changes and selected predictors of each participant. Then, we could use corresponding voxels to train the models. However, without knowing the reference of the voxels to certain regions or the relationship between adjacency and the numeric order, we can't interpret the results directly.
+
+Those results combined with coordinates could be exported as `.csv` files to be applied in the AFNI-projection-visualization pipeline, which helps us understand the similarity and difference of representations between the subjects. 

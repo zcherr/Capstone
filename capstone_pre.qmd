@@ -1,0 +1,59 @@
+---
+title: "Capstone Presentation"
+author: "Zihan Li"
+format: revealjs
+editor: visual
+---
+
+## Introduction
+
+-   This is the introduction slide (could be separated with details)
+    -   Some background
+    -   Rational of the project
+    -   Team members and tasks
+    
+## Data characterization
+
+-   Help the audience to know about the experiment and data
+
+## Data pre-processing
+
+-   A little more details on the data collection and features?
+
+## Machine learning/Decoding
+
+-   How we understand the data and interpret the neural representations
+
+## Visualization
+
+-   Build a clear and meaningful visualization of the brain with tagged data
+-   Conclude the significance
+
+## Just a vis demo
+
+```{r}
+# Load necessary libraries
+library(ggplot2)
+
+# Generate random data
+set.seed(123)  # For reproducibility
+data <- data.frame(
+  category = factor(rep(letters[1:4], each = 50)),
+  value = rnorm(200, mean = 100, sd = 15)
+)
+
+# Plot the random data
+ggplot(data, aes(x = category, y = value, fill = category)) +
+  geom_boxplot() +
+  labs(title = "Random Data Boxplot", x = "Category", y = "Value") +
+  theme_minimal()
+```
+
+
+## Conclusion
+
+-   Recap the work
+
+## Epilogue/Q&A
+
+

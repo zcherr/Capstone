@@ -1,0 +1,193 @@
+---
+title: "FPO_Conversions"
+author: "Zach"
+date: "`r lubridate::today()`"
+format:
+  html:
+    toc: true         
+    toc_depth: 4 
+    embed-resources: true        
+    self_contained: true  
+    theme: flatly         
+editor_options: 
+  chunk_output_type: console
+---
+
+# Setup
+
+```{r, message = FALSE}
+# Packages
+library(tidyverse) 
+library(readr)
+library(akima) 
+
+# Environment
+options(conflicts.policy = "depends.ok",
+        dplyr.print_max = Inf)
+```
+
+## Read in Files
+
+```{r}
+# Define the folder path where the subject folders are located
+orig_data <- "C:/GitHub/FPO_capstone/output_tag"
+
+subject_folders <- list.dirs(path = orig_data, 
+                             recursive = FALSE)
+participant_rows <- data.frame(subj = integer(), 
+                               row_count = integer())
+fpo_df <- data.frame()
+
+for (folder in subject_folders) {
+  file_list <- list.files(path = folder, 
+                          pattern = "*.csv", 
+                          full.names = TRUE)
+  
+  for (file in file_list) {
+    file_name <- tools::file_path_sans_ext(basename(file))
+    subj_number <- as.numeric(sub(".*_([0-9]+)", "\\1", basename(folder)))
+    
+    df <- read_csv(file, 
+                   col_names = TRUE)
+    df <- as.data.frame(df)
+    
+    # Set the first column (voxels) as row names
+    rownames(df) <- df[, 1]
+    df <- df[, -1]
+    
+    # Add a new column 'subj' with the subject number
+    df$subj <- subj_number
+    df$subj <- factor(df$subj, levels = 3:10)
+
+    # Get the number of rows (used for row count confirmation)
+    row_count <- nrow(df)
+    participant_rows <- rbind(participant_rows, 
+                              data.frame(subj = subj_number, 
+                                         row_count = row_count))
+    fpo_df <- rbind(fpo_df, df)
+    
+    # Sort the combined data frame by subject number
+    fpo_df <- fpo_df[order(fpo_df$subj), ]
+    
+    # Clean up temporary variables
+    rm(df, row_count, subj_number, file_name)
+  }
+}
+```
+
+# Brief EDA
+
+## Check any Missing Rows
+
+```{r}
+fpo_df |> 
+  group_by(subj) |>    
+  summarise(new_rows = n()) |> 
+  ungroup() |> 
+  merge(participant_rows, by = "subj", all = TRUE) |> 
+  rename(original_rows = row_count) |> 
+  print() 
+```
+
+## Check Voxels 
+
+```{r}
+head(fpo_df)
+```
+
+### Increse size of values
+
+The values are too small to interpret at this point:
+they are multiplied by 10,000 
+
+```{r}
+fpo_df <- fpo_df |> 
+  mutate(
+    face = face * 10000,
+    place = place * 10000,
+    object = object * 10000
+  )
+
+head(fpo_df)
+```
+
+## Create Split Files
+
+No need to run this if the files are already created
+
+```{r}
+output_path <- "visualization_files/subj_data/subj_matrix" 
+file_list <- list.files(path = output_path, 
+                        pattern = "*.csv", 
+                        full.names = TRUE)
+if (!dir.exists(output_path)) {
+  dir.create(output_path, recursive = TRUE)
+}
+
+# Split fpo_df by subject
+subject_list <- split(fpo_df, fpo_df$subj)
+
+for (subj_num in names(subject_list)) {
+  subj_df <- subject_list[[subj_num]]
+  subj_df <- subj_df[, !names(subj_df) %in% "subj"]
+  
+  subj_num <- sprintf("%02d", as.numeric(subj_num))
+  
+  filename <- paste0("subj", subj_num, ".csv")
+  write.csv(subj_df, file = file.path(output_path, filename), row.names = TRUE)
+}
+```
+
+
+## Read in Files
+
+```{r}
+# Read folder path/list files
+folder_path <- "visualization_files/subj_data/subj_matrix" 
+file_list <- list.files(path = folder_path, 
+                        pattern = "*.csv", 
+                        full.names = TRUE)
+
+subj_data <- list()
+
+for (file in file_list) {
+  file_name <- tools::file_path_sans_ext(basename(file))
+  df <- suppressMessages(read_csv(file, show_col_types = FALSE))
+  df <- as.data.frame(df)
+  
+  rownames(df) <- df[, 1]
+  df <- df[, -1]
+  
+  subj_number <- file_name  
+  assign(subj_number, df, envir = .GlobalEnv)
+  
+  subj_data[[file_name]] <- df
+  
+  rm(df)
+}
+```
+
+# Files for AFNI
+
+## Create .txt Files
+
+```{r}
+output_dir <- "visualization_files/subj_data/cluster_data"
+if (!dir.exists(output_dir)) {
+  dir.create(output_dir, recursive = TRUE)
+}
+
+for (subj in names(subj_data)) {
+  data <- subj_data[[subj]]
+  
+  text_data <- data |> 
+    select(x, y, z, cluster)
+
+  write.table(text_data, file = file.path(output_dir, paste0(subj, "_cluster.txt")), 
+              row.names = FALSE, 
+              col.names = FALSE, 
+              sep = " ", 
+              quote = FALSE)
+}
+```
+
