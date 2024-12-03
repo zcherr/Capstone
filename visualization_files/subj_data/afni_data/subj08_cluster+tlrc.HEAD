@@ -1,8 +1,8 @@
 
 type = string-attribute
 name = HISTORY_NOTE
-count = 404
-'[zch3rr@Vera: Tue Oct 22 10:29:50 2024] {AFNI_24.2.01:linux_ubuntu_16_64} 3dUndump -prefix /mnt/c/Documents/GitHub/FPO_capstone/visualization_files/subj_data/afni_data/subj08_cluster+tlrc -master /mnt/c/Documents/GitHub/FPO_capstone/visualization_files/subj_data/resampledMasks/mask08_RESAMPLED+tlrc -xyz /mnt/c/Documents/GitHub/FPO_capstone/visualization_files/subj_data/cluster_data/subj08_cluster.txt~
+count = 375
+'[zch3rr@Vera: Mon Dec  2 10:22:52 2024] {AFNI_24.3.05:linux_ubuntu_16_64} 3dUndump -prefix /mnt/c/GitHub/FPO_capstone/visualization_files/subj_data/afni_data/subj08_cluster+tlrc -master /mnt/c//GitHub/FPO_capstone/visualization_files/subj_data/resampledMasks/mask08_RESAMPLED+tlrc -xyz /mnt/c/GitHub/FPO_capstone/visualization_files/subj_data/cluster_data/subj08_cluster.txt~
 
 type = string-attribute
 name = TYPESTRING
@@ -12,12 +12,12 @@ count = 15
 type = string-attribute
 name = IDCODE_STRING
 count = 27
-'AFN_WjqNtXRU6Z5_SPfo5ZCZ9Q~
+'AFN_2SRJzFVGmQEYIELR8Kr5tA~
 
 type = string-attribute
 name = IDCODE_DATE
 count = 25
-'Tue Oct 22 10:29:50 2024~
+'Mon Dec  2 10:22:52 2024~
 
 type = integer-attribute
 name = SCENE_DATA

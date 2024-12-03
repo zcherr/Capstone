@@ -1,0 +1,38 @@
+**Process Data in R**
+
+Run the provided R script once to load, clean, and transform subject data for AFNI and SUMA compatibility. The script scales values for readability and saves output files for visualization. Update directory paths if necessary to ensure data files are correctly created.
+
+**Formatting Data for Visualization**
+
+
+---- Adjust any path as needed ----
+
+
+***Navigate to the Directory***:
+In a Linux terminal, navigate to the visualization files directory:
+
+   ```bash
+   cd /mnt/c/GitHub/FPO_capstone/Data_Visualization
+   ```
+
+***Create Files For AFNI/SUMA***
+Run the following script to prepare files for AFNI and SUMA:
+
+   ```bash
+   ./convert_to_afni.sh
+   ```
+
+***Open AFNI/SUMA***
+This script opens AFNI and SUMA simultaneously:
+
+   ```bash
+   ./open_afni_suma.sh
+   ```
+***AFNI Configuration***
+Ensure the proper settings are applied:
+	- Underlay: MNI152_2009
+	- Overlay: subj[num]_cluster
+	- Colorbar: Color_circle_ZSS or RedBlueGreen
+	- select/Click "Pos?"
+
+

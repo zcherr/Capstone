@@ -1,0 +1,83 @@
+---
+title: "pipeline"
+author: "Zihan Li"
+date: "2024-11-29"
+output: html_document
+---
+
+## Introduction
+
+This pipeline:
+-   (1) reads in all individual subject voxel data with stimuli and coordinates data;
+-   (2) streams the individualized data to iterated lasso module and output selected voxels activation data of each subject combined with activation and coordinate data;
+-   (3) trains final glmnet models with L2 norm and extracts model coefficients to combine with coordinates information;
+-   (4) clusters voxels of each subject to specify categories of voxels;
+-   (5) creates visualized results of clustered voxels for similarity/difference comparison.
+
+## Dependencies
+
+```{r message=F}
+# Packages
+library(tidyverse)
+library(glmnet)
+library(ggplot2)
+
+# Self-defined functions
+ilasso_path <- "./zihan_ilasso_functions/"
+ilasso_functions <- list.files(path = ilasso_path,
+                               pattern = "\\.R$",
+                               full.names = T)
+invisible(sapply(ilasso_functions, source))
+```
+
+Individual directories have been created by `individual_data_div.R`. See the file for more details.
+
+## Divide original data
+
+```{r}
+data_path <- "./fpo_data_all"
+stim <-  "fpo_tr5_allParticipants_stimuli.csv"
+coord <- "fpo_tr5_allParticipants_coordinates.csv"
+individual_data_div(data_path = data_path, stim_file = stim, coord_file = coord)
+```
+
+## Read in data
+
+```{r}
+# Read in data for all subjects in a list
+data <- individual_data_read()
+```
+
+# Iterated Lasso, L2 Fitting and Clustering
+
+```{r}
+# Change `use_cache` to F when arguments are modified.
+clustered_data <- individual_data_process(data, nfold = 10, max_iter = 10, seed=137, use_cache = T)
+```
+
+## Save individually clustered data
+
+```{r}
+out_dir <- "./output"
+if (!dir.exists(out_dir)) {
+    dir.create(out_dir)
+}
+
+for (name in names(clustered_data)){
+  out_data <- clustered_data[[name]]$result$data_clustered
+  out_filename <- file.path(out_dir, paste0(name, ".csv"))
+  write_csv(out_data, file = out_filename)
+  cat("Saved:", out_filename, "\n")
+}
+
+```
+
+
+
+
+
+
+
+
+
+

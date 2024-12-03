@@ -1,0 +1,91 @@
+"block","condition","stimulus","alpha_id","filename","category","subject"
+1,"face","Whitney Houston",29,"celeb_pics/Whitney_Houston.bmp","face",10
+1,"location","Vatican City",56,"locat_pics/Vatican_City.bmp","place",10
+1,"face","John Wayne",16,"celeb_pics/John_Wayne.bmp","face",10
+1,"location","Graceland",37,"locat_pics/Graceland.bmp","place",10
+1,"location","Carnegie Hall",34,"locat_pics/Carnegie_Hall.bmp","place",10
+1,"location","Pearl Harbor",46,"locat_pics/Pearl_Harbor.bmp","place",10
+1,"face","Liam Neeson",18,"celeb_pics/Liam_Neeson.bmp","face",10
+1,"object","Pie",80,"obj_pics/pie.bmp","object",10
+1,"object","Pencil Sharpener",78,"obj_pics/pencil_sharpener.bmp","object",10
+1,"location","Washington Monument",57,"locat_pics/Washington_Monument.bmp","place",10
+1,"face","Robin Williams",26,"celeb_pics/Robin_Williams.bmp","face",10
+1,"object","Lightbulb",75,"obj_pics/lightbulb.bmp","object",10
+1,"object","Water Gun",89,"obj_pics/water_gun.bmp","object",10
+1,"object","Bouquet",63,"obj_pics/bouquet.bmp","object",10
+1,"face","Britney Spears",6,"celeb_pics/Britney_Spears.bmp","face",10
+2,"face","Rodney Dangerfield",27,"celeb_pics/Rodney_Dangerfield.bmp","face",10
+2,"face","Morgan Freeman",23,"celeb_pics/Morgan_Freeman.bmp","face",10
+2,"face","Jodie Foster",15,"celeb_pics/Jodie_Foster.bmp","face",10
+2,"object","Vacuum Cleaner",88,"obj_pics/vacuum_cleaner.bmp","object",10
+2,"object","High Chair",71,"obj_pics/high_chair.bmp","object",10
+2,"face","Al Pacino",1,"celeb_pics/Al_Pacino.bmp","face",10
+2,"object","Cd",68,"obj_pics/cd.bmp","object",10
+2,"location","Sphinx",49,"locat_pics/Sphinx.bmp","place",10
+2,"face","Hillary Clinton",12,"celeb_pics/Hillary_Clinton.bmp","face",10
+2,"location","White House",58,"locat_pics/White_House.bmp","place",10
+2,"location","Trafalgar Square",54,"locat_pics/Trafalgar_Square.bmp","place",10
+2,"object","Medal",76,"obj_pics/medal.bmp","object",10
+2,"location","Sahara Desert",47,"locat_pics/Sahara_Desert.bmp","place",10
+2,"location","Niagara Falls",43,"locat_pics/Niagara_Falls.bmp","place",10
+2,"object","Phone",79,"obj_pics/phone.bmp","object",10
+3,"location","Hoover Dam",39,"locat_pics/Hoover_Dam.bmp","place",10
+3,"location","Ethiopian Church",36,"locat_pics/Ethiopian_Church.bmp","place",10
+3,"object","Jackhammer",72,"obj_pics/jackhammer.bmp","object",10
+3,"face","Oprah Winfrey",24,"celeb_pics/Oprah_Winfrey.bmp","face",10
+3,"object","Lego",74,"obj_pics/lego.bmp","object",10
+3,"face","Martha Stewart",21,"celeb_pics/Martha_Stewart.bmp","face",10
+3,"object","Colander",69,"obj_pics/colander.bmp","object",10
+3,"face","Ray Charles",25,"celeb_pics/Ray_Charles.bmp","face",10
+3,"location","Epcot Center",35,"locat_pics/Epcot_Center.bmp","place",10
+3,"object","Toaster",87,"obj_pics/toaster.bmp","object",10
+3,"location","Independence Hall",40,"locat_pics/Independence_Hall.bmp","place",10
+3,"object","Safe",82,"obj_pics/safe.bmp","object",10
+3,"location","Trevi Fountain",55,"locat_pics/Trevi_Fountain.bmp","place",10
+3,"face","Condoleezza Rice",8,"celeb_pics/Condoleezza_Rice.bmp","face",10
+3,"face","Dustin Hoffman",9,"celeb_pics/Dustin_Hoffman.bmp","face",10
+4,"face","Bill Cosby",4,"celeb_pics/Bill_Cosby.bmp","face",10
+4,"location","Brooklyn Bridge",32,"locat_pics/Brooklyn_Bridge.bmp","place",10
+4,"face","Russell Crowe",28,"celeb_pics/Russell_Crowe.bmp","face",10
+4,"object","Mousetrap",77,"obj_pics/mousetrap.bmp","object",10
+4,"location","Old Faithful",45,"locat_pics/Old_Faithful.bmp","place",10
+4,"face","Meg Ryan",22,"celeb_pics/Meg_Ryan.bmp","face",10
+4,"object","Box",66,"obj_pics/box.bmp","object",10
+4,"location","Grand Canyon",38,"locat_pics/Grand_Canyon.bmp","place",10
+4,"location","Mount Rushmore",42,"locat_pics/Mount_Rushmore.bmp","place",10
+4,"location","Cape Canaveral",33,"locat_pics/Cape_Canaveral.bmp","place",10
+4,"object","Keys",73,"obj_pics/keys.bmp","object",10
+4,"object","Shower Head",84,"obj_pics/shower_head.bmp","object",10
+4,"face","Jennifer Lopez",14,"celeb_pics/Jennifer_Lopez.bmp","face",10
+4,"face","Angelina Jolie",2,"celeb_pics/Angelina_Jolie.bmp","face",10
+4,"object","Anchor",60,"obj_pics/anchor.bmp","object",10
+5,"object","Teapot",86,"obj_pics/teapot.bmp","object",10
+5,"location","The Met",52,"locat_pics/The_Met.bmp","place",10
+5,"location","Jefferson Memorial",41,"locat_pics/Jefferson_Memorial.bmp","place",10
+5,"object","Shovel",83,"obj_pics/shovel.bmp","object",10
+5,"face","Audrey Hepburn",3,"celeb_pics/Audrey_Hepburn.bmp","face",10
+5,"object","Apple",61,"obj_pics/apple.bmp","object",10
+5,"object","Projector",81,"obj_pics/projector.bmp","object",10
+5,"face","Chevy Chase",7,"celeb_pics/Chevy_Chase.bmp","face",10
+5,"location","Smoky Mountains",48,"locat_pics/Smoky_Mountains.bmp","place",10
+5,"face","Abraham Lincoln",0,"celeb_pics/Abraham_Lincoln.bmp","face",10
+5,"face","Lisa Kudrow",19,"celeb_pics/Lisa_Kudrow.bmp","face",10
+5,"object","Bowling Ball",65,"obj_pics/bowling_ball.bmp","object",10
+5,"location","Times Square",53,"locat_pics/Times_Square.bmp","place",10
+5,"face","Gwyneth Paltrow",10,"celeb_pics/Gwyneth_Paltrow.bmp","face",10
+5,"location","Big Ben",30,"locat_pics/Big_Ben.bmp","place",10
+6,"face","Helen Hunt",11,"celeb_pics/Helen_Hunt.bmp","face",10
+6,"location","Wrigley Field",59,"locat_pics/Wrigley_Field.bmp","place",10
+6,"object","Candle",67,"obj_pics/candle.bmp","object",10
+6,"face","Mahatma Gandhi",20,"celeb_pics/Mahatma_Gandhi.bmp","face",10
+6,"location","Bourbon Street",31,"locat_pics/Bourbon_Street.bmp","place",10
+6,"location","Notre Dame",44,"locat_pics/Notre_Dame.bmp","place",10
+6,"face","Bill Murray",5,"celeb_pics/Bill_Murray.bmp","face",10
+6,"face","Keira Knightley",17,"celeb_pics/Keira_Knightley.bmp","face",10
+6,"object","Banner",62,"obj_pics/banner.bmp","object",10
+6,"object","Bowl",64,"obj_pics/bowl.bmp","object",10
+6,"location","Stonehenge",50,"locat_pics/Stonehenge.bmp","place",10
+6,"object","Stone",85,"obj_pics/stone.bmp","object",10
+6,"location","St. Paul's Cathedral",51,"locat_pics/St_Pauls_Cathedral.bmp","place",10
+6,"object","Guitar",70,"obj_pics/guitar.bmp","object",10
+6,"face","Jack Black",13,"celeb_pics/Jack_Black.bmp","face",10

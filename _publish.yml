@@ -1,0 +1,4 @@
+- source: capstone_pre.qmd
+  quarto-pub:
+    - id: 06ca962d-e30f-457b-865c-49f69e2e95d5
+      url: 'https://zli2545.quarto.pub/capstone-presentation'
